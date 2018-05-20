@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import cx from '_utilities/classnames';
 import './HomePage.scss';
 
-export const HomePage = props => {
+const HomePage = props => {
   const {images} = props;
   return (
     <div className="">
@@ -21,3 +21,5 @@ export const HomePage = props => {
 HomePage.propTypes = {
   images: PropTypes.array
 };
+
+export default HomePage;
