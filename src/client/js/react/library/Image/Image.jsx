@@ -31,6 +31,7 @@ class ImageComponent extends React.Component {
     const {isLoading} = this.state;
     const aspectRatio = width && height ? Math.min(height/width, width/height) : 0;
     const styles = (aspectRatio && isLoading) ? {paddingBottom: `${aspectRatio * 100}%`} : {};
+    const wrapperStyles = aspectRatio && isLoading ? {width, height, maxWidth: `100%`} : {};
     const Image = !isLoading ? <img className="ImageComponent-img" src={src} alt={alt}/> : <div className="ImageComponent-img"/>;
     return (
       <div className={cx("ImageComponent", {
@@ -38,7 +39,7 @@ class ImageComponent extends React.Component {
         "ImageComponent--fullWidth": fullWidth,
         "ImageComponent--fullHeight": fullHeight,
         "ImageComponent--isLoading": isLoading
-      })}>
+      })} style={wrapperStyles}>
         <figure className="ImageComponent-wrapper" style={styles}>
           {Image}
         </figure>
@@ -59,7 +60,7 @@ ImageComponent.propTypes = {
 ImageComponent.defaultProps = {
   withBorder: false,
   fullHeight: false,
-  fullWidth: true,
+  fullWidth: false,
   height: null,
   width: null,
   alt: '',
