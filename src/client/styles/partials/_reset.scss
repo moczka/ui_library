@@ -17,7 +17,7 @@ ul {
   list-style-type: none;
 }
 *, *:before, *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 body {
   //height: 10000px;
