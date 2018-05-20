@@ -1,0 +1,56 @@
+@import '~_styles/variables/_variables';
+@import '~_styles/mixins/_global_mixins';
+
+$alignments: (
+  left: left,
+  right: right,
+  center: center
+);
+
+.Page {
+  &-section {
+    position: relative;
+    padding: 0 16px;
+    max-width: $bp--larger;
+    margin: 24px auto;
+    &--fluid {
+      margin: 0;
+    }
+  }
+  &-sectionCard {
+    &-content {
+      font-size: $font-size--2000;
+      color: $brand-darkgrey;
+      text-align: left;
+      padding: 16px 0;
+      @each $alignment, $orientation in $alignments {
+        &--#{$alignment} {
+          text-align: $orientation;
+        }
+      }
+    }
+  }
+  &-sectionTitle {
+    text-align: left;
+    margin: 8px 0 24px;
+    &-title,
+    &-iconWrapper {
+      display: inline-block;
+      font-size: $font-size--4000;
+    }
+    &-iconWrapper {
+      position: relative;
+      top: 8px;
+      margin-left: 16px;
+    }
+    @each $alignment, $orientation in $alignments {
+      &--#{$alignment} {
+        text-align: $orientation;
+      }
+    }
+    &--separated {
+      border-bottom: 1px solid $brand-lightgrey--lighter;
+      padding-bottom: 12px;
+    }
+  }
+}

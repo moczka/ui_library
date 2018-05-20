@@ -1,0 +1,33 @@
+{
+  "name": "ui_library",
+  "version": "1.0.0",
+  "description": "A library of reusable user interface components.",
+  "main": "src/client/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moczka/ui_library.git"
+  },
+  "keywords": [
+    "ui",
+    "components",
+    "react",
+    "reusable",
+    "user",
+    "interface",
+    "pattern",
+    "library",
+    "sass",
+    "co-located",
+    "styles",
+    "css"
+  ],
+  "author": "Javier S. Guerrero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moczka/ui_library/issues"
+  },
+  "homepage": "https://github.com/moczka/ui_library#readme"
+}

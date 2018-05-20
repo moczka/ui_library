@@ -1,0 +1,45 @@
+@import '~_styles/variables/_variables';
+@import '~_styles/mixins/_global_mixins';
+
+.Card {
+  @include reset_anchor_styles();
+  display: block;
+  text-decoration: none;
+  border: 2px solid $brand-lightgrey--lighter;
+  border-radius: 4px;
+  color: $brand-darkgrey;
+  &:hover {
+    text-decoration: underline;
+  }
+  &-image {
+    border-bottom: 1px solid $brand-lightgrey--lighter;
+    height: 200px;
+    width: 100%;
+  }
+  &-iconLink {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &-desc {
+    text-align: left;
+    position: relative;
+    padding: 8px 32px 8px 8px;
+  }
+  &--withoutBorder {
+    border: none;
+    .Card-desc {
+      border: 2px solid $brand-lightgrey--lighter;
+      border-top: 1px solid $brand-lightgrey--lighter;;
+      border-bottom-right-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+    .Card-image {
+      border: none;
+    }
+  }
+}

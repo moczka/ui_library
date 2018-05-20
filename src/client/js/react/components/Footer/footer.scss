@@ -1,0 +1,61 @@
+@import '~_styles/variables/_variables';
+@import '~_styles/mixins/_global_mixins';
+
+.Footer {
+  &-content {
+    padding: 16px 0;
+    &-title {
+      font-size: $font-size--1000;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      color: $brand-darkgrey;
+      &-text {
+        display: inline-block;
+        padding-bottom: 8px;
+        border-bottom: 3px solid $primary-teal;
+        &:hover {
+          border-color: $orange;
+          transition: border-color .2s ease-out;
+        }
+      }
+    }
+    &-description {
+      max-height: 150px;
+      overflow: hidden;
+    }
+  }
+  &-attribution {
+    color: $white;
+    padding: 16px 0;
+    background: $secondary-grey--light;
+    text-align: center;
+  }
+  &-socialMediaBar {
+    background: $primary-teal--light;
+    border-top: 2px solid $brand-darkgrey;
+    border-bottom: 2px solid $brand-darkgrey;
+    padding: 16px 0;
+    color: $white;
+    &-message {
+      font-size: $font-size--1000;
+      color: $white;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+    &-submessage {
+      display: block;
+      font-style: italic;
+      font-weight: 300;
+      margin-top: 8px;
+    }
+  }
+  &-contactList {
+    > li > i {
+      margin-right: 8px;
+    }
+  }
+  &-column {
+    padding: 8px 0;
+  }
+}

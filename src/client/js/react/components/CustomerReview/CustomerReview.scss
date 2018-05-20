@@ -1,0 +1,32 @@
+@import '~_styles/variables/_variables';
+@import '~_styles/mixins/_global_mixins';
+
+.CustomerReview {
+  &-date {
+    font-weight: 400;
+  }
+  &-name,
+  &-comment {
+    font-weight: 300;
+    font-style: italic;
+  }
+  &-name {
+    display: block;
+    text-align: right;
+    &:before {
+      content: '- ';
+    }
+  }
+  &-comment {
+    font-size: $font-size--2000;
+    padding: 8px 0;
+    &:before {
+      content: open-quote;
+      padding-right: 4px;
+    }
+    &:after {
+      content: close-quote;
+      padding-left: 4px;
+    }
+  }
+}

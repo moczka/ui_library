@@ -1,0 +1,34 @@
+// Brand Colors
+$primary-teal: #295F4E;
+$secondary-grey: #323232;
+$tertiary-beige: #F4E5C2;
+$brand-teal: #44695B;
+$brand-darkgrey: #383A35;
+$white: #fff;
+$brand-lightgrey: #ccc;
+
+// Primary Colors
+$green: #1A8A34;
+$red: #C70039;
+$blue: #22559C;
+$yellow: #FFE933;
+$orange: #FF803B;
+$black: #000;
+
+// Shades
+$brand-lightgrey--lighter: #eeeeee;
+$primary-teal--light: rgb(60, 133, 110);
+$primary-teal--lighter: rgb(66, 148, 122);
+$secondary-grey--light: #3d3d3d;
+$secondary-grey--lighter: #666565;
+$tertiary-beige--light: rgb(223, 212, 190);
+$tertiary-beige--lighter: rgb(223, 215, 200);
+
+// Text colors
+$text-color--base: darken($secondary-grey, $tint--3000);
+$text-color--sucess: $green;
+$text-color--error: $red;
+$text-color--alert: $blue;
+$text-color--warning: $orange;
+
+
