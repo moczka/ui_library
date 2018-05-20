@@ -86,12 +86,6 @@ const browserConfig = {
                       presets: ["react-app"]
                     }
                }
-            },
-            {
-                test: /\.(png|svg|jpg|gif)$|\.(woff|woff2|eot|ttf|otf)$/,
-                use: [
-                    'file-loader'
-                ]
             }
         ]
     },
