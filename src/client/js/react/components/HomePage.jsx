@@ -12,7 +12,7 @@ const HomePage = props => {
       {images.map(image => (
         <div key={image.id}>
           {image.name}
-          <div style={{display:`inline-block`}}>
+          <div style={{display:`inline-block`, width: 400}}>
             <Image {...image} alt={image.name}/>
           </div>
         </div>
