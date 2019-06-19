@@ -1,5 +1,4 @@
 const state = {
-  /*
   images: [
     {
       name: "Kitty 1",
@@ -30,7 +29,7 @@ const state = {
       src: "https://placekitten.com/g/203/203"
     }
   ]
-  */
+  /*
   images: [
     {
       name: "Kitty 1",
@@ -40,5 +39,6 @@ const state = {
       src: "https://placekitten.com/g/200/200"
     }
   ]
+  */
 };
 export default state;

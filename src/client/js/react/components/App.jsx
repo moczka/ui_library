@@ -13,14 +13,11 @@ class App extends React.Component {
   }
   render() {
     return (
-      /*
         <Switch>
           {routes.map((route, index) => (
             <Route key={`${route.path ? route.path : `404Page`}-${index}`} {...route} />
           ))}
         </Switch>
-        */
-       <HomePage />
     );
   }
 }
