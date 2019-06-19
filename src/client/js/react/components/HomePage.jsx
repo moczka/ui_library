@@ -1,15 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import cx from '_utilities/classnames';
 import './HomePage.scss';
 import Image from '_library/Image/Image';
+import data from '_data/rawData';
 
 const HomePage = props => {
-  const {images} = props;
   return (
     <div className="">
       Testing....
-      {images.map(image => (
+      {data.images.map(image => (
         <div key={image.id}>
           {image.name}
           <div style={{display:`inline-block`, width: 400}}>
