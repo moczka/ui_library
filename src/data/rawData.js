@@ -29,16 +29,6 @@ const state = {
       src: "https://placekitten.com/g/203/203"
     }
   ]
-  /*
-  images: [
-    {
-      name: "Kitty 1",
-      id: 123,
-      width: 200,
-      height: 200,
-      src: "https://placekitten.com/g/200/200"
-    }
-  ]
-  */
+
 };
 export default state;
